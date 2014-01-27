@@ -10,7 +10,7 @@ define([
 
     var HomeView = Backbone.View.extend({
         template: JST['app/scripts/templates/home.hbs'],
-        el: '[data-region="nav"]',
+        el: '[data-region="main"]',
 
         render : function() {
         	this.$el.html(this.template());

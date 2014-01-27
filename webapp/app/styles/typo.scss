@@ -1,0 +1,27 @@
+$font-size-base:          14px !default;
+
+$font-size-md:            floor($font-size-base * 2.6) !default; // ~36px
+$font-size-xl:         	  ceil($font-size-base * 6) !default;
+
+
+.megatron {
+	margin:auto;
+	text-align:center;
+	position:absolute;
+	height:100%;
+	width:100%;
+	.inner {
+		position: relative;
+		top: 20%;
+		text-align: left;
+		display:inline-block;
+
+		.text {
+			margin-bottom:60px;
+		}
+
+		h1 {
+			font-size: $font-size-xl;
+		}
+	}
+}
