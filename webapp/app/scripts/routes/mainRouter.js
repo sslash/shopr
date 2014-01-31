@@ -2,22 +2,21 @@
 
 define([
     'backbone',
-    'views/navigation',
-    'views/home'
-], function (Backbone, NavView, HomeView) {
+], function (Backbone) {
     'use strict';
 
     var MainrouterRouter = Backbone.Router.extend({
         routes: {
+            'register'  : 'register',
         	'*default' : 'default'
         },
 
-        default : function() {
-        	this.navView = new NavView();
-        	this.navView.render();
+        register : function() {
+            App.command.registerView();
+        },
 
-            this.homeView = new HomeView();
-            this.homeView.render();
+        default : function() {
+            App.command.homeView();
         }
 
     });

@@ -1,1 +1,23 @@
 .small-space {margin: 10px;}
+.pointer { cursor : pointer;}
+.centerify {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.fullscreen {
+  position: fixed; 
+  top: 0; 
+  left: 0;
+}
+.fullscreen img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}

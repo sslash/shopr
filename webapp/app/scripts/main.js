@@ -2,6 +2,7 @@
 'use strict';
 
 require.config({
+    root : '',
     shim: {
         underscore: {
             exports: '_'
@@ -32,8 +33,11 @@ require.config({
 
 require([
     'backbone',
-    'app'
-], function (Backbone, App) {
-    window.App = new App().init().start();
-    
+    'app',
+    'viewCommand'
+], function (Backbone, App, Command) {
+    var app = new App();
+    window.App = app;
+    app.init();
+    app.start();    
 });
